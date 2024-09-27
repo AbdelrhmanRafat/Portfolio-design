@@ -1,0 +1,92 @@
+@media screen and (max-width: 991px) {
+    .Menu-Icon {
+        display: block;
+    }
+    .nav-bar-list {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Menu-Icon {
+        display: none;
+    }
+    .nav-bar-list {
+        display: block;
+    }
+    .About-Texts {
+        width: 70%;
+        padding-inline: 90px;
+    }
+    .About-Image-section {
+        width: 30%;
+    }
+    .Section-title::before {
+        content: "";
+        position: absolute;
+        height: 7px;
+        bottom: -12px;
+        left: 0;
+        right: 0;
+        transform: scaleX(0.05);
+        border: 1px solid #ff305b;
+        border-right: none;
+        border-left: none;
+    }
+    .Section-title::after {
+        content: "";
+        position: absolute;
+        height: 7px;
+        bottom: -15.5px;
+        left: 0;
+        right: 0;
+        transform: scaleX(0.1);
+        border: 2px solid #ff305b;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .Our-Service-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Our-service-card {
+        width: 25%;
+    }
+    .About-Image-section {
+        border: solid 6px darkslategray;
+        border-radius: 5px;
+        padding-bottom: 30px;
+    }
+    .About-Image {
+        left: 15px;
+        top: 15px;
+    }
+    .Our-Portfolio-categories ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .Our-Portfolio-categories li:last-child {
+        width: fit-content;
+    }
+
+    .Our-Portfolio-categories .container {
+        width: 30%;
+    }
+    .Our-Portfolio-image-card {
+        width: 33%;
+    }
+    .Our-Facts-Card {
+        width: 25%;
+    }
+    .Name-Input,
+    .Email-Input {
+        width: 49%;
+    }
+    .Contact-US .Contact-US-Inputs .container {
+        width: 50%;
+    }
+}

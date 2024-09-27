@@ -1,0 +1,472 @@
+/* &General Styles ---------------------------------------------------------------- */
+:root {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clr {
+    clear: both;
+}
+
+h2,
+p {
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+}
+
+.Default-Btn {
+    background-color: #ff305b;
+    color: white;
+    margin-right: 5px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+}
+
+.Default-Btn:hover {
+    background-color: red;
+}
+
+.Default-Input {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 13px;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.social-container {
+    position: relative;
+}
+
+.social-container i {
+    margin-right: 4px;
+    color: white;
+}
+
+.Section-title {
+    text-align: center;
+    position: relative;
+}
+
+.Section-title::before {
+    content: "";
+    position: absolute;
+    height: 7px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0.1);
+    border: 1px solid #ff305b;
+    border-right: none;
+    border-left: none;
+}
+
+.Section-title::after {
+    content: "";
+    position: absolute;
+    height: 7px;
+    bottom: -15.5px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0.2);
+    border: 2px solid #ff305b;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+
+/* &End of General Styles ---------------------------------------------------------------- */
+
+/* Nav Bar Design -------------------------------------------------------------------------*/
+.nav-bar {
+    background-color: rgb(0, 0, 0,0.9);
+    width: 100%;
+    padding-block: 2px;
+    z-index: 10;
+}
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-Text-icon {
+    float: left;
+}
+.nav-bar-Text-icon h3 {
+    color: #ff305b;
+    font-size: 33px;
+    font-weight: 900;
+    padding-inline: 10px;
+    margin: 0px;
+}
+.Menu-Icon {
+    display: block;
+    float: right;
+    font-size: 30px;
+    color: white;
+}
+.nav-bar-list {
+    display: none;
+}
+.nav-bar-list ul {
+    display: flex;
+    gap: 3px;
+}
+.nav-bar-list a {
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-size: 18px;    
+    text-decoration: none;
+    color: white;
+    transition: color, 300ms;
+}
+.nav-bar-list a:hover {
+    color: #ff305b;
+}
+/* End of Nav Bar Design -------------------------------------------------------------------------*/
+
+/* !Home Section Design -------------------------------------------------------------------*/
+
+.home-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("../Images/Background-image.jpg");
+    background-size: cover;
+    background-position: center top;
+    overflow: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section-welcome-text .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.home-section-welcome-text h1 {
+    color: #ff305b;
+    font-size: 40px;
+    padding-block: 4px;
+    margin: 0px;
+    width: 100%;
+}
+.home-section-welcome-text h4 {
+    color: white;
+    margin: 0px;
+    padding-block: 4px;
+    font-size: 33px;
+    width: 100%;
+}
+/* !End of Home Section Design------------------------------------------------------------------------------------ */
+
+
+/* !About Section Design------------------------------------------------------------------------------------ */
+
+.about-section {
+    position: relative;
+    padding-block: 30px;
+}
+
+.About-Image-section {
+    width: 100%;
+    float: left;
+}
+
+.About-Image {
+    position: relative;
+    overflow: hidden;
+}
+
+.About-Image:hover .About-overlay-img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.About-Image img {
+    width: 100%;
+    display: block;
+}
+
+.About-overlay-img {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: transform 500ms, opacity 500ms;
+}
+
+.About-Texts {
+    float: left;
+    width: 100%;
+    padding-block: 20px;
+}
+
+.About-Texts-Hello-Txt {
+    padding-bottom: 20px;
+    border: dotted 1.6px black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.About-Texts-Hello-Txt h2 {
+    margin-bottom: 10px;
+}
+
+.About-Texts-Hello-Txt h2::first-letter {
+    color: #ff305b;
+}
+
+.About-Texts-Info-Txt p {
+    float: left;
+    width: 40%;
+    padding-top: 15px;
+}
+
+.About-Texts-Info-Txt p span {
+    font-weight: 800;
+}
+
+.About-buttons {
+    padding-top: 12px;
+}
+
+.About-buttons button span {
+    margin-right: 1px;
+}
+
+
+/* !End of About Section Design------------------------------------------------------------------------------------ */
+
+
+/* !Our Service Section Design------------------------------------------------------------------------------------ */
+
+.Our-Service {
+    padding-block: 30px;
+    background-color: rgb(241, 241, 241);
+}
+
+.Our-Service-cards {
+    padding-block: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.Our-service-card {
+    width: 80%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.Our-service-card-content i {
+    font-size: 25px;
+}
+
+.Our-service-card:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.Our-service-card i {
+    color: #ff305b;
+}
+
+
+/* !End of Our Service Section Design------------------------------------------------------------------------------------ */
+
+
+/* !Our Portfolio Section Design------------------------------------------------------------------------------------ */
+
+.Our-Portfolio {
+    padding-block: 40px;
+}
+
+.Our-Portfolio-categories .container {
+    padding: 10px;
+}
+
+.Our-Portfolio-categories ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.Our-Portfolio-categories li {
+    text-align: center;
+    width: fit-content;
+}
+.Our-Portfolio-categories li:last-child {
+    text-align: center;
+    padding-block: 4px;
+    width: 100%;
+}
+
+
+.Our-Portfolio-categories a {
+    text-decoration: none;
+    color: black;
+}
+
+.Our-Portfolio-categories a:hover {
+    color: #ff305b;
+}
+
+.Our-Portfolio-image-card {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    position: relative;
+}
+
+.Our-Portfolio-image-card::before {
+    content: "";
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    transition-property: "opacity";
+    transition-duration: 0.7s;
+}
+
+.Our-Portfolio-image-card:hover::before {
+    opacity: 0.5;
+}
+
+.Our-Portfolio-image-card img {
+    width: 100%;
+    display: block;
+}
+
+
+/* !Our-Facts Section--------------------------------------------------------- */
+
+.Our-Facts {
+    padding-block: 40px;
+}
+
+.Our-Facts .container {
+    padding-block: 10px;
+    text-align: center;
+}
+
+.Our-Facts-Card h4 {
+    margin: 0;
+}
+
+.Our-Facts-Card {
+    float: left;
+    font-size: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.Our-Facts-Card span {
+    font-size: 18px;
+}
+
+.Our-Facts-Card i {
+    color: #ff305b;
+}
+
+
+/* !-------------------------------------------------------------------------- */
+
+.Contact-US {
+    padding-block: 40px;
+}
+
+.Contact-US .Contact-US-Inputs .container {
+    padding-block: 30px;
+}
+
+.Contact-US-Inputs button {
+    margin: 0px;
+    display: block;
+}
+
+.Name-Input {
+    float: left;
+}
+
+.Email-Input {
+    float: right;
+}
+
+
+/* !End of Our Service Section Design------------------------------------------------------------------------------------ */
+
+
+/* !Footer Section Design------------------------------------------------------------------------------------ */
+
+.footer {
+    background-color: black;
+    padding: 60px;
+}
+
+.footer-Goodbye-Section {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-Goodbye-Section a {
+    color: #ff305b;
+    text-decoration: none;
+}
+
+.footer-Goodbye-Section a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-container {
+    text-align: center;
+}
+
+
+/* !End of Footer Section Design------------------------------------------------------------------------------------ */
